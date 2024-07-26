@@ -1,0 +1,139 @@
+/* reset; eliminação de estilos basicos para que possa ser trabalhado os estilos unicamente do CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: #333;
+}
+
+p,
+label{
+    color: rgb(240, 116, 116);
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"]{
+    width: 400px;
+}
+
+/* page header */
+.header {
+    height: 160px;
+    padding: 20px;
+    background-color: #B10D0B;
+}
+
+img {
+    width: 10%;
+}
+
+.header h3{
+    color: #fff;
+    margin-top: 0;
+}
+
+/* form container */
+
+.form-container{
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -62px;
+}
+
+/* form header */
+
+.form-header{
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p{
+    color: #B10D0B;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center ;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+/* form body */
+
+.form-body{
+    padding: 30px;
+
+}
+
+.form-title{
+    margin-bottom: 15px;
+}
+
+.form-title p{
+    margin-bottom: 15px;
+}
+
+.required-field {
+    color: #d80935;
+}
+
+.box-input {
+    margin-bottom: 35px;
+}
+
+.box-input p{
+    margin-top: 35px;
+}
+
+.block {
+    display: block;
+}
+
+.optional-box {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.optional-list li{
+    list-style: none;
+}
+
+.btn-submit{
+    background-color: #ff0000;
+    color: #fdfdfd;
+    border: 3px solid #dfdfdf;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-submit:hover{
+    background-color: #ffffff;
+    border-color: #ff0000;
+    color: #ff0000;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+   <div class="container">
+        <div class="header">
+            <img src="./images/nautico2.webp">
+            <h3>Espaço Sócio Torcedor!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Sócio Torcedor tem mais beneficios!</h1>
+                <p>Seja um sócio torcedor e ajude enquanto torce!
+                </p>
+                <form>
+                    <div class="box-input">
+                        <label for="price"> Quantidade de membros <span class="required-field">*</span></label>
+                        <input type="number" name="members" id="members" class="block" placeholder="Defina a quantidade de membros">
+                    </div>   
+                    
+                    <div class="optional-box">
+                        <p>Plano que Deseja:</p><br>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="branco-paz" name="optional[]" value="Branco-paz">
+                                <label for="branco-paz">Branco de Paz</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="vermelho-luta="optional[]" value="vermelho-luta">
+                                <label for="vermelho-luta">Vermelho de Luta</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="patrimonial" name="optional[]" value="patrimonial">
+                                <label for="patrimonial">Socio Patrimonial</label>
+                            </li> <br>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="purchase_date">Melhor data de Vencimento<span class="required-field">*</span></label>
+                        <input type="date" name="exp_date" id="exp_date" class="block" required>
+                    </div>
+
+                    <div class="box-input">
+                        <p> Forma de Compensação <span class="required-field">*</span></p>
+                        <input type="radio" id="annual" name="annual">
+                        <label for="manual">Anual</label>
+                        <input type="radio" id="monthly" name="monthly">
+                        <label for="automatico">Mensal</label>
+                    </div>
+
+
+                    <div class="optional-box">
+                        <p>Opcionais sócio Hexa é Luxo</p><br>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="chairs" name="optional[]" value="chairs">
+                                <label for="chairs">Cadeiras</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="timbuzone" name="optional[]" value="timbuzone">
+                                <label for="timbuzone">Timbuzone</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="vip-area" name="optional[]" value="vip-area">
+                                <label for="vip-area">Area VIP (camarote)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="nda" name="optional[]" value="nda">
+                                <label for="nda">Não desejo acrescentar</label>
+                            </li>
+                    </div>
+
+                    <div class="box-input">
+                        <p>Por favor, anexe foto do(s) seu(s) documento(s) pessoal(is)</p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+                    </div>
+
+                    <p>Você receberá um e-mail com o link para cadastramento de dados para pagamento e atribuição de planos a cada dependente.</p>
+
+                    <input type="submit" value="Enviar" class="btn-submit">
+
+                </form>
+            </div>
+        </div>
+   </div>
+    
+</body>
+</html>
